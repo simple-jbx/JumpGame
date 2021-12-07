@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<title>庆祝中国共产党成立100周年-跳一跳学习党史</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="css/jump.css">
+		<link rel="stylesheet" href="css/popup.css">
+	</head>
+	<body>
+		
+		<div class="mask">
+			<div class="content">
+				<div class="score-container">
+					<h1 class="score"></h1>
+					<p class="title">本游戏中所有素材均来源于网络</p>
+				</div>
+				
+				<button class="restart">
+				重新开始
+				</button>
+			</div>
+		</div>
+		
+		<div class="info">
+			<div class="score-gaming">
+				<span class="score-current"></span>
+			</div>
+		</div>
+	<!-- 图片缩略图，点击图片触发点击事件，以触发弹窗-->
+	<img id="preImg" src="" style="display:none;">
+	<img id="preBigImg" src="" style="display:none;">
+
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal" >
+
+        <!-- 关闭按钮 -->
+        <span class="close" onclick="closeModal()">&times;</span>
+		
+
+        <!-- 弹窗内容 -->
+        <!-- 属性设置为模态框 -->
+        <img class="modal-content" id="imgModal" onclick="showBigImage()">
+		<img class="modal-big-content" id="bigIimgModal">
+		<!-- 文本描述 -->
+        <div id="caption"></div>
+	</div>
+
+		<!--<script type="text/javascript" src="js/jquery-1.11.0.min.js" charset="utf-8"></script>-->
+		<script src="https://cdn.jsdelivr.net/npm/three@0.88.0/build/three.min.js"></script>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- <script src="js/three.min.js"></script>-->
+		<script src="js/game-debug.js"></script>
+		<script src="js/main-debug.js"></script>
+	</body>
+</html>
